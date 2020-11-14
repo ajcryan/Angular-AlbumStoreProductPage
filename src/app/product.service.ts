@@ -16,6 +16,6 @@ return {
 	getAlbum: getAlbum
 }
 
-  constructor() { private _http: Http }
+  constructor(private _http: Http) {  }
 
 }
