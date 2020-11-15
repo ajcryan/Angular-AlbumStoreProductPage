@@ -12,8 +12,8 @@ private _albumUrl = "../assets/album.json";
 
 constructor(private _http: Http) {  }
 
-getAlbum(id: number){
-	return Observable<Album>.this._http.get(this._albumUrl)
+getAlbum(id: number): Observable<Album> {
+	return this._http.get(this._albumUrl)
 	.map((response) => <Album>response.json());
 }
 
